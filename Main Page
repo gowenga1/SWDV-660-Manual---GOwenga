@@ -1,0 +1,38 @@
+# employee class code in Python
+# class definition
+class Employee:
+    __id=0
+    __name=""
+    __gender=""
+    __address=""
+    __department=""
+	
+	# function to set data 
+    def setData(self,id,name,gender,address,department):
+        self.__id=id
+        self.__name = name
+        self.__gender = gender
+        self.__address = address
+        self.__department = department
+	
+	# function to get/print data
+    def showData(self):
+        print("Id\t\t:",self.__id)
+        print("Name\t\t:", self.__name)
+        print("Gender\t\t:", self.__gender)
+        print("Address\t\t:", self.__address)
+        print("Department\t:", self.__department)
+
+# main function definition
+def main():
+    #Employee Object
+    emp=Employee()
+    emp.setData(1,'Robinson Clerk','male','443 Perkins Rd, Memphis, TN 38117','Information Technology')
+    emp.showData()
+    emp.setData(2,'Winfred Tulson','female','2345 Baning St, Tulane, MS 39145','Human Resource')
+    emp.showData()
+    emp.setData(3,'Susan Meyer','female','4321 Hood Rd,Jackson, MS 39304','Finance')
+    emp.showData()
+	
+if __name__=="__main__":
+    main()
